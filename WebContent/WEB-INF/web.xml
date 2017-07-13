@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>BeerSelect</display-name>
+    <welcome-file-list>
+    <welcome-file>form.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>BeerSelect</servlet-name>
+    <servlet-class>com.example.web.BeerSelect</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BeerSelect</servlet-name>
+    <url-pattern>/SelectBeer.do</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+     <param-name>adminEmail</param-name>
+     <param-value>zoeyqq@yeah.net</param-value>
+  </context-param>
+  
+</web-app>
